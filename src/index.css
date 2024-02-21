@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+  
+
 .home{
     background-image: linear-gradient(#344E41F2, #00000021);
 }
+
