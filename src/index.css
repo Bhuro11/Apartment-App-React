@@ -6,11 +6,9 @@
   
 
 .home {
-    background-image: url("./components/images/hero-backGround.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: right;
-    background-position-y: center;
-    
-  }
-
+  background-image: url("./components/images/hero-backGround.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: right;
+  background-position-y: center;
+}
