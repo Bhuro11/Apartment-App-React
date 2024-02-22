@@ -3,26 +3,22 @@ import TopHeader from '../TopHeader'
 import Logo from '../images/HomeLogo.png'
 import { Link } from 'react-router-dom'
 import { FaQuoteLeft } from "react-icons/fa";
+import { HiMiniHome } from "react-icons/hi2";
 import Service1 from '../images/service1.png'
 import Service2 from '../images/service2.png'
 import Service3 from '../images/service3.png'
 
 export default function HomePage() {
   return (
-    <div className='h-screen w-full ' >
-        <div className='home min-h-screen w-full flex flex-col gap-10' style = {{
-            backgroundImage:
-            `url("https://www.thespruce.com/thmb/zVrZlbIOVmH172Gkju3uCMpX2sc=/2048x0/filters:no_upscale():max_bytes(150000):strip_icc()/lavender2-dd461d67ee8240d5bbca3e0b09e9c41c.png")`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            }}>
+    <div className='home h-screen w-full' >
+        <div className='min-h-screen w-full flex flex-col gap-10'>
             <TopHeader />
             <div className='flex justify-evenly items-center' >
                 <div className='flex justify-center items-center'>
                     <img src={Logo} alt="" />
                 </div>
                 <div>
-                    <ul className='nav-items flex justify-center items-center gap-9 text-2xl text-white'>
+                    <ul className='nav-items flex justify-center items-center gap-9 text-2xl'>
                         <li><Link to="/">HOME</Link></li>
                         <li><Link to="/">ABOUT US</Link></li>
                         <li><Link to="/">OUR SERVICE</Link></li>
@@ -35,9 +31,9 @@ export default function HomePage() {
             </div>
             <div className=' w-[800px] mx-10 my-10 p-7 flex flex-col items-center gap-5'>
                 <div className='flex flex-col gap-5'>
-                    <p className='text-2xl text-[#a3b18a]'>THE BEST PLACE TO RENT AN APARTMENT IN INDONESIA</p>
-                    <h1 className='text-6xl'>Hey, <span className='text-[#A3B18A]'>Find</span> Your Dream <br /><span className='text-[#A3B18A]'>Apartment Here..</span></h1>
-                    <p className='text-2xl'>Your Dream Home, Just One Click Away: Discover Comfort <br />in Every Apartment in Indonesia.</p>
+                    <p className='text-xl text-[#a3b18a]'>THE BEST PLACE TO RENT AN APARTMENT IN INDONESIA</p>
+                    <h1 className='text-6xl text-[#F3ECDC]'>Hey, <span className='text-[#A3B18A]'>Find</span> Your Dream <br /><span className='text-[#A3B18A]'>Apartment Here..</span></h1>
+                    <p className='text-xl text-[#FFFFFF]'>Your Dream Home, Just One Click Away: Discover Comfort <br />in Every Apartment in Indonesia.</p>
                 </div>
                 <div className='flex gap-5 '>
                     <button className='p-2 text-white rounded-3xl w-52 h-12 bg-[#588157]'>See More</button>
@@ -80,8 +76,30 @@ export default function HomePage() {
                     <img src={Service3} className='ml-5' alt="" />
                 </div>
             </div>
-                
-        
+        </div>
+        <div className='w-full h-[730px] bg-[#F3ECDC] flex flex-col justify-around items-center'>
+            <div className='flex flex-col gap-4 items-center'>
+                <p className='text-[#A3B18A] text-xl'>The service we provide</p>
+                <h1 className='text-[#2D2D2D] text-4xl'>Services That Support</h1>
+            </div>
+            <div className='w-full flex justify-around items-center'>
+                <div className='bg-[#344E41] w-80 h-72 flex flex-col justify-around items-center rounded-2xl'>
+                    <p className='text-2xl'>Best Apartment</p>
+                    <p className='text-xl'>Providing a list of the best <br />apartments across Indonesia:</p>
+                    <button className='w-52 rounded-2xl p-2 bg-[#588157] text-[#F3ECDC]'>See more</button>
+                </div>
+                <div className='bg-[#F9F9F9] w-80 h-72 flex flex-col justify-around items-center rounded-2xl'>
+                    <HiMiniHome className='text-4xl' />
+                    <p className='text-[#2D2D2D] text-2xl'>Modern Room</p>
+                    <p className='text-[#6E6E6E] text-xl'>Providing a room that is modern <br />and meets your dreams</p>
+                    <button className='w-52 rounded-2xl p-2 bg-[#588157] text-[#F3ECDC]'>See more</button>
+                </div>
+                <div className='bg-[#F9F9F9] w-80 h-72 flex flex-col justify-around items-center rounded-2xl'>
+                    <p className='text-[#2D2D2D] text-2xl'>Complete Facilities</p>
+                    <p className='text-[#6E6E6E] text-xl'>Providing all supporting and<br /> adequate facilities.</p>
+                    <button className='w-52 rounded-2xl p-2 bg-[#588157] text-[#F3ECDC]'>See more</button>
+                </div>
+            </div>
         </div>
     </div>
   )
