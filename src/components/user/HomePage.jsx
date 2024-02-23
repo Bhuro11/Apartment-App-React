@@ -2,9 +2,11 @@ import React from 'react';
 import TopHeader from '../TopHeader';
 import Logo from '../images/HomeLogo.png';
 import { Link } from 'react-router-dom';
-import { FaQuoteLeft, FaCalendarAlt } from "react-icons/fa";
+import { FaQuoteLeft, FaCalendarAlt, FaShieldAlt } from "react-icons/fa";
 import { HiMiniHome } from "react-icons/hi2";
 import { FaAward } from "react-icons/fa6";
+import { AiOutlineBars } from "react-icons/ai";
+import { TiMessages } from "react-icons/ti";
 import Service1 from '../images/service1.png';
 import Service2 from '../images/service2.png';
 import Service3 from '../images/service3.png';
@@ -139,8 +141,26 @@ export default function HomePage() {
                 <p className='text-[#F3ECDC] text-5xl'>We provide the best service results for your apartment</p>
                 <div className='flex justify-between items-center'>
                     <img src={Service6} className='w-72 rounded-xl' alt="" />
-                    <div>
-
+                    <div className='flex items-center justify-between'>
+                        <FaShieldAlt className='text-[#A3B18A] text-2xl' />
+                        <div className='flex flex-col items-center'>
+                            <h1 className='text-[#F3ECDC] text-2xl'>Service Warranty</h1>
+                            <p className='text-[#FFFFFFBF] text-xl'>Getting security</p>
+                        </div>
+                    </div>
+                    <div className='flex items-center justify-between'>
+                        <AiOutlineBars className='text-[#A3B18A] text-2xl' />
+                        <div className='flex flex-col items-center'>
+                            <h1 className='text-[#F3ECDC] text-2xl'>List of the Best Apartments</h1>
+                            <p className='text-[#FFFFFFBF] text-xl'>The best apartment in Indonesia</p>
+                        </div>
+                    </div>
+                    <div className='flex items-center justify-between'>
+                        <TiMessages className='text-[#A3B18A] text-2xl' />
+                        <div className='flex flex-col items-center'>
+                            <h1 className='text-[#F3ECDC] text-2xl'>Service Warranty</h1>
+                            <p className='text-[#FFFFFFBF] text-xl'>Getting security</p>
+                        </div>
                     </div>
                 </div>
             </div>
