@@ -139,27 +139,27 @@ export default function HomePage() {
             <div className='w-[750px] h-[600px] flex flex-col justify-evenly'>
                 <p className='text-[#A3B18A] text-xl'>Why should you use our services</p>
                 <p className='text-[#F3ECDC] text-5xl'>We provide the best service results for your apartment</p>
-                <div className='flex justify-between items-center'>
+                <div className='w-[700px] flex justify-evenly items-center gap-5'>
                     <img src={Service6} className='w-72 rounded-xl' alt="" />
                     <div className='flex items-center justify-between'>
-                        <FaShieldAlt className='text-[#A3B18A] text-2xl' />
+                        <FaShieldAlt className='text-[#A3B18A] text-5xl' />
                         <div className='flex flex-col items-center'>
                             <h1 className='text-[#F3ECDC] text-2xl'>Service Warranty</h1>
                             <p className='text-[#FFFFFFBF] text-xl'>Getting security</p>
                         </div>
                     </div>
                     <div className='flex items-center justify-between'>
-                        <AiOutlineBars className='text-[#A3B18A] text-2xl' />
+                        <AiOutlineBars className='text-[#A3B18A] text-5xl' />
                         <div className='flex flex-col items-center'>
                             <h1 className='text-[#F3ECDC] text-2xl'>List of the Best Apartments</h1>
                             <p className='text-[#FFFFFFBF] text-xl'>The best apartment in Indonesia</p>
                         </div>
                     </div>
                     <div className='flex items-center justify-between'>
-                        <TiMessages className='text-[#A3B18A] text-2xl' />
+                        <TiMessages className='text-[#A3B18A] text-5xl' />
                         <div className='flex flex-col items-center'>
-                            <h1 className='text-[#F3ECDC] text-2xl'>Service Warranty</h1>
-                            <p className='text-[#FFFFFFBF] text-xl'>Getting security</p>
+                            <h1 className='text-[#F3ECDC] text-2xl'>Free Consultation</h1>
+                            <p className='text-[#FFFFFFBF] text-xl'>Best consultation available</p>
                         </div>
                     </div>
                 </div>
