@@ -1,8 +1,9 @@
 import React from 'react';
 import TopHeader from '../TopHeader';
+import Footer from './Footer';
 import Logo from '../images/HomeLogo.png';
 import { Link } from 'react-router-dom';
-import { FaQuoteLeft, FaCalendarAlt, FaShieldAlt } from "react-icons/fa";
+import { FaQuoteLeft, FaCalendarAlt, FaShieldAlt, FaCheckCircle } from "react-icons/fa";
 import { HiMiniHome } from "react-icons/hi2";
 import { FaAward } from "react-icons/fa6";
 import { AiOutlineBars } from "react-icons/ai";
@@ -135,36 +136,62 @@ export default function HomePage() {
                 <button className='w-52 rounded-2xl p-2 bg-[#588157] text-[#F3ECDC]'>View more</button>
             </div>
         </div>
-        <div className='bg-[#344E41] w-full h-[700px] flex items-center'>
-            <div className='w-[750px] h-[600px] flex flex-col justify-evenly'>
+        <div className='bg-[#344E41] w-full h-[700px] flex justify-around items-center'>
+            <div className='w-[750px] h-[600px] flex flex-col justify-evenly items-center ml-5'>
                 <p className='text-[#A3B18A] text-xl'>Why should you use our services</p>
                 <p className='text-[#F3ECDC] text-5xl'>We provide the best service results for your apartment</p>
                 <div className='w-[700px] flex justify-evenly items-center gap-5'>
                     <img src={Service6} className='w-72 rounded-xl' alt="" />
-                    <div className='flex items-center justify-between'>
-                        <FaShieldAlt className='text-[#A3B18A] text-5xl' />
-                        <div className='flex flex-col items-center'>
-                            <h1 className='text-[#F3ECDC] text-2xl'>Service Warranty</h1>
-                            <p className='text-[#FFFFFFBF] text-xl'>Getting security</p>
+                    <div className='flex flex-col items-center justify-evenly h-[400px]'>
+                        <div className='flex items-center justify-evenly w-[300px]'>
+                            <FaShieldAlt className='text-[#A3B18A] text-5xl' />
+                            <div className='flex flex-col items-center'>
+                                <h1 className='text-[#F3ECDC] text-2xl'>Service Warranty</h1>
+                                <p className='text-[#FFFFFFBF] text-xl'>Getting security</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className='flex items-center justify-between'>
-                        <AiOutlineBars className='text-[#A3B18A] text-5xl' />
-                        <div className='flex flex-col items-center'>
-                            <h1 className='text-[#F3ECDC] text-2xl'>List of the Best Apartments</h1>
-                            <p className='text-[#FFFFFFBF] text-xl'>The best apartment in Indonesia</p>
+                        <div className='flex items-center justify-evenly w-[400px]'>
+                            <AiOutlineBars className='text-[#A3B18A] text-5xl' />
+                            <div className='flex flex-col items-center'>
+                                <h1 className='text-[#F3ECDC] text-2xl'>List of the Best Apartments</h1>
+                                <p className='text-[#FFFFFFBF] text-xl'>The best apartment in Indonesia</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className='flex items-center justify-between'>
-                        <TiMessages className='text-[#A3B18A] text-5xl' />
-                        <div className='flex flex-col items-center'>
-                            <h1 className='text-[#F3ECDC] text-2xl'>Free Consultation</h1>
-                            <p className='text-[#FFFFFFBF] text-xl'>Best consultation available</p>
+                        <div className='flex items-center justify-evenly w-[350px]'>
+                            <TiMessages className='text-[#A3B18A] text-5xl' />
+                            <div className='flex flex-col items-center'>
+                                <h1 className='text-[#F3ECDC] text-2xl'>Free Consultation</h1>
+                                <p className='text-[#FFFFFFBF] text-xl'>Best consultation available</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div className='flex flex-col justify-around items-center bg-[#3A5A40] rounded-2xl h-[500px] w-[400px]'>
+                <FaQuoteLeft />
+                <p className='text-2xl text-white'>"Adequate facilities in a modern place."</p>
+                <p className='text-xl text-white'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div className='w-[300px] h-[150px] flex flex-col justify-center items-center '>
+                    <div className='flex justify-center items-center'>
+                        <FaCheckCircle className='text-[#F3ECDC]' />
+                        <p className='text-xl'>24 Hours Consultation</p>
+                    </div>
+                    <div className='flex justify-evenly items-center'>
+                        <FaCheckCircle className='text-[#F3ECDC]' />
+                        <p className='text-xl'>Certification Team</p>
+                    </div>
+                    <div className='flex justify-evenly items-center'>
+                        <FaCheckCircle className='text-[#F3ECDC]' />
+                        <p className='text-xl'>More Office Branch</p>
+                    </div>
+                    <div className='flex justify-evenly items-center'>
+                        <FaCheckCircle className='text-[#F3ECDC]' />
+                        <p className='text-xl'>Best Work Result</p>
+                    </div>
+                </div>
+            </div>
         </div>
+        <Footer />
     </div>
   )
 }
